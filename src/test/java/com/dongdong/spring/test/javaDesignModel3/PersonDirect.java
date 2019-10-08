@@ -1,7 +1,6 @@
 package com.dongdong.spring.test.javaDesignModel3;
 
 import org.junit.Test;
-import org.springframework.security.core.parameters.P;
 
 /**
  * @Description:

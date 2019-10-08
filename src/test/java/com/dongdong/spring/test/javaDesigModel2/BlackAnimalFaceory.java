@@ -1,6 +1,6 @@
 package com.dongdong.spring.test.javaDesigModel2;
 
-/**
+/** 抽象工厂
  * @Description:
  * @Auther: dongdong
  * @Date: 2019/9/25  17:41
