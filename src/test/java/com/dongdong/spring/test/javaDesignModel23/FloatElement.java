@@ -15,8 +15,7 @@ public class FloatElement implements Visitable {
         return fe;
     }
 
-    @Override
     public void accept(Visitor visitor) {
-        visitor.visitFsloat(this);
+
     }
 }

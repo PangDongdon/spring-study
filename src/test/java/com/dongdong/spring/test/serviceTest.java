@@ -17,6 +17,8 @@ public class serviceTest  extends ApplicationTests {
     public void test() {
         try {
             demoService.call();
+            String s="ss";
+            s.intern();
         }catch(Exception e){
             e.getMessage();
         }

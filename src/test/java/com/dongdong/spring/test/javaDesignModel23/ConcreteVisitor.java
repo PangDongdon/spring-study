@@ -9,17 +9,17 @@ import java.util.Iterator;
  * @Date: 2019/10/8  15:08
  */
 public class ConcreteVisitor implements Visitor {
-    @Override
+
     public void visitString(StringElement stringElement) {
          System.out.println(stringElement.getSe());
     }
 
-    @Override
+
     public void visitFsloat(FloatElement floatElement) {
         System.out.println(floatElement.getFe());
     }
 
-    @Override
+
     public void visitCollection(Collection collection) {
         Iterator iterator=collection.iterator();
         while(iterator.hasNext()){
