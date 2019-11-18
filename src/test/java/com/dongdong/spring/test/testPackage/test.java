@@ -20,4 +20,8 @@ public class test {
         set.add(2);
         System.out.println(set+":"+set.size());
     }
+
+    public Void test(){
+        return null;
+    }
 }
