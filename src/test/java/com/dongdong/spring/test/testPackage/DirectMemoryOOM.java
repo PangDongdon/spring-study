@@ -1,5 +1,6 @@
 package com.dongdong.spring.test.testPackage;
 
+import org.junit.Test;
 import sun.misc.Unsafe;
 
 import java.lang.reflect.Field;
@@ -23,6 +24,13 @@ public class DirectMemoryOOM {
     }
 
 
+    @Test
+    public void test(){
+        String w="3dd";
+        if(!"3".equals(w)){
+           System.out.println("输出了数据");
+        }
+    }
 
 
 }
