@@ -1,4 +1,4 @@
-package com.dongdong.spring.test.designModel1;
+package com.dongdong.spring.test.javadDesignModel1;
 
 /** 工厂方法
  * @Description:

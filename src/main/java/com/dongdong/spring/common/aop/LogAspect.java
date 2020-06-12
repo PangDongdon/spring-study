@@ -1,3 +1,4 @@
+/*
 package com.dongdong.spring.common.aop;
 
 import org.aspectj.lang.JoinPoint;
@@ -10,11 +11,13 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
 
+*/
 /**
  * @Description:
  * @Date: 2019/11/28  9:49
  * @Author: dongdong
- */
+ *//*
+
 @Aspect
 @Component
 public class LogAspect {
@@ -66,3 +69,4 @@ public class LogAspect {
         }
     }
 }
+*/
