@@ -2,6 +2,8 @@ package com.dongdong.spring.test;
 
 import com.dongdong.spring.ApplicationTests;
 import com.dongdong.spring.service.DemoService;
+import net.dongliu.commons.Sys;
+import org.apache.logging.log4j.ThreadContext;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -15,13 +17,15 @@ public class serviceTest  extends ApplicationTests {
     private DemoService demoService;
     @Test
     public void test() {
-        try {
-            demoService.call();
-            String s="ss";
-            s.intern();
-        }catch(Exception e){
-            e.getMessage();
-        }
+//        try {
+//            demoService.call();
+//            String s="ss";
+//            s.intern();
+//        }catch(Exception e){
+//            e.getMessage();
+//        }
+       System.out.println(ThreadContext.getContext());
+        System.out.println(ThreadContext.class.getName());
     }
 
 }

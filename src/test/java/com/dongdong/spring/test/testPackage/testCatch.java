@@ -1,5 +1,10 @@
 package com.dongdong.spring.test.testPackage;
 
+import com.dongdong.spring.util.DateUtils;
+import net.dongliu.commons.Sys;
+
+import java.util.Date;
+
 /**
  * @Description:
  * @Date: 2019/12/27  15:50
@@ -8,8 +13,9 @@ package com.dongdong.spring.test.testPackage;
 public class testCatch {
 
     public static void main(String[] args){
-        test12();
-        test1();
+//        test12();
+//        test1();
+        System.out.println( DateUtils.format(new Date(),"yyyyMMddHHmmss"));
     }
 
     private static int  test1(){

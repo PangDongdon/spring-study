@@ -16,6 +16,7 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <guava.version>27.0.1-jre</guava.version>
     </properties>
 
     <dependencies>
@@ -35,6 +36,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!--引入AOP-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -102,6 +111,12 @@
             <version>3.15</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.github.davidcarboni</groupId>
+            <artifactId>encrypted-file-upload</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
         <!-- redis and jedis jar包 -->
 
         <dependency>
@@ -130,6 +145,64 @@
                 <version>1.6.2</version>
             </dependency>
 
+        <!--缓存-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.1.9.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <!--处理json格式数据-->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.4</version>
+        </dependency>
+
+        <!--http请求工具requests start-->
+        <dependency>
+            <groupId>net.dongliu</groupId>
+            <artifactId>requests</artifactId>
+            <version>5.0.8</version>
+        </dependency>
+        <!--http请求工具requests end-->
+
+        <!--excel工具-->
+        <dependency>
+            <groupId>com.github.crab2died</groupId>
+            <artifactId>Excel4J</artifactId>
+            <version>3.0.0-Alpha</version>
+        </dependency>
+
+        <!--使用【GeoLite2 City】库-->
+        <dependency>
+            <groupId>com.maxmind.geoip2</groupId>
+            <artifactId>geoip2</artifactId>
+            <version>2.8.1</version>
+        </dependency>
+
+        <!--谷歌jar -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <!-- <version>${commons-lang3.version}</version> -->
+        </dependency>
+        <!--做io文件的操作-->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -142,8 +215,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>7</source>
-                    <target>7</target>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
         </plugins>

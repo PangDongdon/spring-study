@@ -21,7 +21,7 @@ import java.net.InetAddress;
  */
 @Slf4j
 @Service
-public class GetRegionByIpUtil extends Application {
+public class GetRegionByIpUtil {
     @Autowired
     private Environment environment;
     private static String dbPath = "/usr/local/GeoLite2-City.mmdb";
