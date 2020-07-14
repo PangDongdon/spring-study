@@ -7,7 +7,7 @@ import java.lang.annotation.*;
  * @Date: 2020/6/29  16:11
  * @Author: dongdong
  */
-@Target(ElementType.TYPE)
+@Target(ElementType.TYPE_USE)
 @Retention(RetentionPolicy.RUNTIME)
 @Inherited
 public @interface Inheritable {
