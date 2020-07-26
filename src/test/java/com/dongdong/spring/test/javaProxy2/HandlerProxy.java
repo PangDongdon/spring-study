@@ -25,7 +25,7 @@ public class HandlerProxy implements InvocationHandler {
         bb();
         return object1;
     }
-   void aa(){
+    void aa(){
       System.out.println("1");
     }
     void bb(){
