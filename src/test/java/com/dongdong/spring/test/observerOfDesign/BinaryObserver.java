@@ -8,8 +8,12 @@ package com.dongdong.spring.test.observerOfDesign;
  */
 public class BinaryObserver extends  Observer {
 
+    public BinaryObserver(Subject subject){
+        this.subject=subject;
+        subject.attach(this);
+    }
     @Override
     public void update() {
-        System.out.println("Octal");
+        System.out.println("Octal Stirng"+Integer.toOctalString(subject.getState()));
     }
 }
