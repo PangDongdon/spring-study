@@ -27,4 +27,21 @@ public class shellSort {
              }
          }
     }
+
+
+     //2.希尔排序
+    public  static void shellSort(int[] a,int n){
+       int h=1;
+       while(h<n/3){
+           h=3*h+1;
+       }
+       while(h>=1){
+           for(int i=0;i<n;i++){
+             for(int j=i;j>=h && a[j]<a[j-h];j=j-h){
+                 int temp=a[j];a[j]=a[j-h];a[j-h]=temp;// 交换元素
+             }
+           }
+           h=h/3;//减少间距
+       }
+    }
 }

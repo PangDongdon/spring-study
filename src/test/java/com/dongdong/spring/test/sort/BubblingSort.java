@@ -27,26 +27,48 @@ public class BubblingSort {
 //
 //    }
 
-  /**冒泡排序*/
+//  /**冒泡排序*/
+//    public static void main(String[] args) {
+//        boolean flag=false;
+//        int temp=0;
+//        int[] aa={2,3,4,1,0};
+//        for(int i=0;i<aa.length-1;i++){
+//            for(int j=0;j<aa.length-1-i;j++){
+//                if(aa[j]>aa[j+1]){
+//                    temp=aa[j];
+//                    aa[j]=aa[j+1];
+//                    aa[j+1]=temp;
+//                    flag=true;
+//                }
+//            }
+//            if(!flag){
+//                break;
+//            }
+//        }
+//        for(int ss:aa){
+//            System.out.println(ss);
+//        }
+//    }
+
+
     public static void main(String[] args) {
-        boolean flag=false;
-        int temp=0;
-        int[] aa={2,3,4,1,0};
-        for(int i=0;i<aa.length-1;i++){
-            for(int j=0;j<aa.length-1-i;j++){
-                if(aa[j]>aa[j+1]){
-                    temp=aa[j];
-                    aa[j]=aa[j+1];
-                    aa[j+1]=temp;
+        int[] a={2,3,4,1,0};
+        int n=a.length;
+        if(n<=1) return;
+        for(int i=0;i<n-1;i++){
+            //提前退出冒泡排序的标志
+            boolean flag=false;
+            for(int j=0;j<n-i-1;j++){
+                if(a[j]>a[j+1]){
+                    int tmp=a[j];a[j]=a[j+1];a[j+1]=tmp;//交换元素
                     flag=true;
                 }
             }
-            if(!flag){
-                break;
-            }
+            if(flag==false) break;//如果没有元素交换，则已经有序，结束
         }
-        for(int ss:aa){
+        for(int ss:a){
             System.out.println(ss);
         }
+
     }
 }
