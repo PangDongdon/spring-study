@@ -5,7 +5,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Description:
+ * @Description:  自定义线程池 1： 线程池核心数 2：线程池的最大数 3：存活时间 4: 阻塞队列 5;淘汰策略
  * @Date: 2020/7/1  10:44
  * @Author: dongdong
  */
