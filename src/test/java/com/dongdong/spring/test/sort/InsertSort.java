@@ -56,10 +56,23 @@ public class InsertSort {
 
     public static void main(String[] args) {
           int[] a={2,1,33,0};
-         insertSort(a);
+         //insertSort(a);
+        insertSort1(a);
          for(int s:a){
             System.out.println(s);
         }
     }
 
+    public  static   void  insertSort1(int[] ss){
+         for(int i=1;i<ss.length;i++){
+             int insertVal=ss[i];
+             int index=i-1;
+             while(index>=0 && insertVal<ss[index]){
+                 //插入的数据前移
+                   ss[index+1]=ss[index];
+                   index--;
+             }
+                    ss[index+1]=insertVal;
+         }
+    }
 }

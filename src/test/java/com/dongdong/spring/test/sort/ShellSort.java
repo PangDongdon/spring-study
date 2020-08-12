@@ -3,7 +3,7 @@ package com.dongdong.spring.test.sort;
  * 希尔排序
  *
  * */
-public class shellSort {
+public class ShellSort {
 
     public static void main(String[] args) {
         int[] arr={1,2,5,3};
@@ -44,4 +44,28 @@ public class shellSort {
            h=h/3;//减少间距
        }
     }
+
+     private void shellSort(int[] a){
+       int dk=a.length/2;
+       while(dk>=1){
+           ShellInsertSort(a,dk);
+           dk=dk/2;
+       }
+     }
+
+     private void  ShellInsertSort(int[] a,int dk){
+         //类似插入排序，插入排序的增量是1，这里的增量是dk
+         for(int i=dk;i<a.length;i++){
+             if(a[i]<a[i-dk]){
+               int j;
+               int x=a[i]; //x为待插入元素
+               a[i]=a[i-dk];
+               for(j=i-dk;j>=0 && x<=a[j];j=j-dk){
+                   //通过循环，逐个后移一位要找到要插入的位置
+                   a[j+dk]=a[j];
+               }
+               a[j+dk]=x;
+             }
+         }
+     }
 }
