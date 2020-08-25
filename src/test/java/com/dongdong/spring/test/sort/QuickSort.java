@@ -107,13 +107,11 @@ public class QuickSort {
 
             //递归
             if(start>low){
-                sort(a,low,start-1); //左边序列.第一个索引位置到关键字索引-1
+                sort1(a,low,start-1); //左边序列.第一个索引位置到关键字索引-1
             }
             if(end<high){
-                sort(a,end+1,high); //右边序列.从关键值索引+1到最后一个
+                sort1(a,end+1,high); //右边序列.从关键值索引+1到最后一个
             }
-
-
         }
 
     }

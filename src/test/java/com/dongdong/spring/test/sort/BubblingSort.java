@@ -69,6 +69,5 @@ public class BubblingSort {
         for(int ss:a){
             System.out.println(ss);
         }
-
     }
 }
