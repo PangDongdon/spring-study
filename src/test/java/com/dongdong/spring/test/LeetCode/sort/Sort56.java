@@ -36,7 +36,5 @@ public class Sort56 {
             }
             return  result;
         }
-
     }
-
 }
