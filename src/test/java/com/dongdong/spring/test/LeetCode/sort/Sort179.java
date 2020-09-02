@@ -117,5 +117,11 @@ public class Sort179 {
         }
     }
 
+        @Test
+        public void test(){
+            int[]  aa={3,30,35,5,9};
+            //int[]  aa={10,2};
+            System.out.println(largestNumber(aa));
+        }
     }
 }
