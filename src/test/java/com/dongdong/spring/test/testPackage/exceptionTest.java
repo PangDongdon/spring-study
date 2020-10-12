@@ -30,14 +30,13 @@ public class exceptionTest {
             e.printStackTrace();
             System.out.println("===============");
             throw e;
-
         }
+        System.out.println("会执行到这里吗");
     }
 
     @Test
     public void testJsonObject(){
         Object contextHolder=SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         System.out.println(contextHolder);
-
     }
 }
