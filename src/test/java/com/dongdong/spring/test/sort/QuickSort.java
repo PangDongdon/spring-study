@@ -40,7 +40,7 @@ public class QuickSort {
 
     public static void main(String[] args) {
         int[] a={48,6,57,42,60,72,83,73,88,85};
-        quickSort1(a,10);
+        sort2(a,0,9);
         for(int ss:a){
             System.out.println(ss);
         }
@@ -113,7 +113,34 @@ public class QuickSort {
                 sort1(a,end+1,high); //右边序列.从关键值索引+1到最后一个
             }
         }
+    }
 
+
+    public   static void  sort2(int[] arr,int start,int end){
+        if(start<end){
+            //数组中的首位数字作为基准数
+            int stard=arr[start];
+            //记录需要排序的下标
+            int low=start;
+            int high=end;
+            //循环
+            while(low<high){
+                while(low<high && arr[high]>=stard){
+                    high--;
+                }
+                arr[low]=arr[high];
+                while(low<high && arr[low]<=stard){
+                    low++;
+                }
+                //使用左边的数替换右边的数
+                arr[high]=arr[low];
+            }
+            //把标准值赋值给下标重合的位置
+            arr[low]=stard;
+            //处理所有小的数字
+            sort2(arr,start,low);
+            sort2(arr,low+1,end);
+        }
     }
 
 

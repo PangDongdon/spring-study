@@ -4,6 +4,7 @@ import net.dongliu.commons.Sys;
 
 import java.awt.*;
 import java.util.concurrent.Callable;
+import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.FutureTask;
 
 public class CallableTest implements Callable<Integer> {

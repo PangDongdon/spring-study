@@ -11,7 +11,7 @@ import java.util.concurrent.CountDownLatch;
  * @Author: dongdong
  */
 public class CountDownLatchTest2 {
-    CountDownLatch countDownLatch=new CountDownLatch(1);
+    CountDownLatch countDownLatch=new CountDownLatch(100);
 
     @Test
     public  void main11() throws InterruptedException {
@@ -19,7 +19,7 @@ public class CountDownLatchTest2 {
         for(int i=0;i<100;i++){
             new Thread(new Task(countDownLatch)).start();
         }
-        countDownLatch.countDown();
+       // countDownLatch.countDown();
         countDownLatch.await();
         System.out.println("主线程开始执行了");
 
@@ -34,12 +34,8 @@ public class CountDownLatchTest2 {
 
       @Override
         public void run() {
-            try {
-                countDownLatch.await();
-            } catch (InterruptedException e){
-                e.printStackTrace();
-            }
-            System.out.println(Thread.currentThread().getName()+"开始执行"+"，执行时间为："+ System.currentTimeMillis());
+          countDownLatch.countDown();
+          System.out.println(Thread.currentThread().getName()+"开始执行"+"，执行时间为："+ System.currentTimeMillis());
         }
     }
 

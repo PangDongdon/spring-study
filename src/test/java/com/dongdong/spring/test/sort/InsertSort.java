@@ -75,4 +75,23 @@ public class InsertSort {
                     ss[index+1]=insertVal;
          }
     }
+
+    public void insertSortx(int[] arr){
+        //遍历所有数字
+        for(int i=1;i<arr.length;i++){
+            //当前数字比前一个数字小
+            if(arr[i]<arr[i-1]){
+                int j;
+                //保存当前要遍历的数
+                int temp=arr[i];
+                for(j=i-1;j>=0 && arr[j]>temp;j--){
+                    arr[j+1]=arr[j];
+                }
+                //把临时变量赋给不满足条件的后一个元素
+                arr[j+1]=temp;
+            }
+        }
+    }
+
+
 }
