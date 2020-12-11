@@ -10,10 +10,10 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class Student {
-  //  @Autowired
-    private Teacher teacher;
     @Autowired
-    public Student(Teacher teacher){
+    private Teacher teacher;
+  //  @Autowired
+   /* public Student(Teacher teacher){
         this.teacher=teacher;
-    }
+    }*/
 }
