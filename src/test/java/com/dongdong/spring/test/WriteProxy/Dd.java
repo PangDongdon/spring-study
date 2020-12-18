@@ -1,3 +1,4 @@
+/*
 package com.dongdong.spring.test.WriteProxy;
 
 import com.google.gson.Gson;
@@ -7,11 +8,13 @@ import org.springframework.boot.test.json.GsonTester;
 import java.util.ArrayList;
 import java.util.List;
 
+*/
 /**
  * @Description:
  * @Date: 2020/4/23  19:54
  * @Author: dongdong
- */
+ *//*
+
 @Data
 public class Dd {
 	 private String name;
@@ -31,14 +34,19 @@ public class Dd {
 		Gson gson=new Gson();
 		List<String> sss=new ArrayList<>();
 		sss.add("dddd");
-	/*	sss.add(d);
-		sss.add(d);*/
+	*/
+/*	sss.add(d);
+		sss.add(d);*//*
+
 		Dd cc=new Dd();
 		cc.setAge(99);
 		cc.setName("vv");
 		cc.setDd(sss);
-		/*cc.setDd(sss);*/
+		*/
+/*cc.setDd(sss);*//*
+
  	    String ss=	gson.toJson(cc);
 	    System.out.println(ss);
 	}
 }
+*/

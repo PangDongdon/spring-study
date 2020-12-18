@@ -12,8 +12,12 @@ import org.springframework.stereotype.Service;
 public class Student {
     @Autowired
     private Teacher teacher;
-  //  @Autowired
-   /* public Student(Teacher teacher){
+ /* //  @Autowired
+    public Student(Teacher teacher){
         this.teacher=teacher;
     }*/
+   public void test(){
+       System.out.println("test--student");
+       teacher.test();
+   }
 }
