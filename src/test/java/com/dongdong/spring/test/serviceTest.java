@@ -26,4 +26,9 @@ public class serviceTest  extends ApplicationTests {
         context.refresh();
     }
 
+    @Test
+    public void test1(){
+        System.out.println("3号枪".replaceAll("[^0-9]", "").trim());
+    }
+
 }
