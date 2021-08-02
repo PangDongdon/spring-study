@@ -16,4 +16,10 @@ public class LoginController {
     public String getLoginUsername(String name,Integer age){
         return "name="+name+"   "+"age="+age;
     }
+
+
+    public static void main(String[] args) {
+        Integer  a=4;
+        System.out.println(a.intValue()==4);
+    }
 }

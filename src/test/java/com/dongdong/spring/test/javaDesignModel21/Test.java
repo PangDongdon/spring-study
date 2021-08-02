@@ -10,6 +10,6 @@ public class Test {
         Context cx=new Context(new StrategyImplA());
         cx.doMethod();
         Context cxq=new Context(new StrategyImplB());
-        cx.doMethod();
+        cxq.doMethod();
     }
 }

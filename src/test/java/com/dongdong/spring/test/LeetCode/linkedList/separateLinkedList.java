@@ -1,12 +1,15 @@
+/*
 package com.dongdong.spring.test.leetCode.linkedList;
 
 import org.junit.Test;
 
+*/
 /**
  * @Description: 1->4->3->2->5->2  分隔链表
  * @Date: 2020/9/22  14:42
  * @Author: dongdong
- */
+ *//*
+
 public class SeparateLinkedList {
 
     public ListNode getListNode(ListNode node,int x){
@@ -43,3 +46,4 @@ public class SeparateLinkedList {
         System.out.println(getListNode(node,3).next.next.next.next.val);
     }
 }
+*/
