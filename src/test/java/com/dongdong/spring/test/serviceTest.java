@@ -6,6 +6,9 @@ import net.dongliu.commons.Sys;
 import org.apache.logging.log4j.ThreadContext;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * @Description:
@@ -17,15 +20,15 @@ public class serviceTest  extends ApplicationTests {
     private DemoService demoService;
     @Test
     public void test() {
-//        try {
-//            demoService.call();
-//            String s="ss";
-//            s.intern();
-//        }catch(Exception e){
-//            e.getMessage();
-//        }
-       System.out.println(ThreadContext.getContext());
-        System.out.println(ThreadContext.class.getName());
+        //System.out.println(ThreadContext.getContext());
+        //System.out.println(ThreadContext.class.getName());
+        AbstractApplicationContext  context= new ClassPathXmlApplicationContext("");
+        context.refresh();
+    }
+
+    @Test
+    public void test1(){
+        System.out.println("3号枪".replaceAll("[^0-9]", "").trim());
     }
 
 }

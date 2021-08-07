@@ -15,7 +15,7 @@ public class HandlerProxy implements InvocationHandler {
     public HandlerProxy(Object object) {
         this.object = object;
     }
-  public  Object getInstance(){
+    public  Object getInstance(){
     return   Proxy.newProxyInstance(object.getClass().getClassLoader(),object.getClass().getInterfaces(),this);
   }
     @Override

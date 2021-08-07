@@ -12,6 +12,5 @@ public class test {
                 HandlerProxy proxy = new HandlerProxy(actoinMovie);
                 Movie actoinMovi1e = (Movie) proxy.getInstance();
                 actoinMovi1e.watchMovie();
-
         }
 }
