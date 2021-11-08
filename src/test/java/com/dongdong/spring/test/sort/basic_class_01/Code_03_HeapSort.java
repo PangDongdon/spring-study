@@ -1,5 +1,8 @@
 package com.dongdong.spring.test.sort.basic_class_01;
 
+import com.dongdong.spring.test.sort2.JavaUtil;
+import org.junit.Test;
+
 import java.util.Arrays;
 
 public class Code_03_HeapSort {
@@ -126,4 +129,10 @@ public class Code_03_HeapSort {
 		printArray(arr);
 	}
 
+@Test
+	public void   test(){
+		int[] arr=JavaUtil.s;
+		heapSort(arr);
+		JavaUtil.printNum(arr);
+	}
 }

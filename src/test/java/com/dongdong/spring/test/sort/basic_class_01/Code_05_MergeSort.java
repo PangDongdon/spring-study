@@ -1,5 +1,8 @@
 package com.dongdong.spring.test.sort.basic_class_01;
 
+import com.dongdong.spring.test.sort2.JavaUtil;
+import org.junit.Test;
+
 import java.util.Arrays;
 
 public class Code_05_MergeSort {
@@ -9,6 +12,14 @@ public class Code_05_MergeSort {
 			return;
 		}
 		mergeSort(arr, 0, arr.length - 1);
+	}
+
+	@Test
+	public void test(){
+		// System.out.println(sort2(JavaUtil.s,0,JavaUtil.s.length-1));
+		int [] dd= JavaUtil.s;
+		mergeSort(dd,0,JavaUtil.s.length-1);
+		JavaUtil.printNum(dd);
 	}
 
 	public static void mergeSort(int[] arr, int l, int r) {

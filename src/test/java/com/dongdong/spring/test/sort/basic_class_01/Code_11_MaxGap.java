@@ -1,5 +1,8 @@
 package com.dongdong.spring.test.sort.basic_class_01;
 
+import com.dongdong.spring.test.sort2.JavaUtil;
+import org.junit.Test;
+
 import java.util.Arrays;
 
 public class Code_11_MaxGap {
@@ -42,6 +45,11 @@ public class Code_11_MaxGap {
 
 	public static int bucket(long num, long len, long min, long max) {
 		return (int) ((num - min) * len / (max - min));
+	}
+
+	@Test
+	public void test(){
+		System.out.println(maxGap(JavaUtil.s));
 	}
 
 	// for test
