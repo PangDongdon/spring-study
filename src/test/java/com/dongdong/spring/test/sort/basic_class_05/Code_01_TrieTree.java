@@ -111,7 +111,6 @@ public class Code_01_TrieTree {
 		trie.delete("zuoa");
 		System.out.println(trie.search("zuoa"));
 		System.out.println(trie.prefixNumber("zuo"));
-
 	}
 
 }

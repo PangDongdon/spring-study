@@ -3,6 +3,7 @@ package com.dongdong.spring.api;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 /**
  * @Description:
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @Author: dongdong
  */
 @Controller
+@EnableWebMvc
 @RequestMapping(value = "dd")
 public class LoginController {
     @GetMapping(value = "/getUsername")

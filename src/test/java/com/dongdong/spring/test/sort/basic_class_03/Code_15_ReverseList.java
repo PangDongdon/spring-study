@@ -72,12 +72,7 @@ public class Code_15_ReverseList {
 	}
 
 	public static void main(String[] args) {
-		Node head1 = new Node(1);
-		head1.next = new Node(2);
-		head1.next.next = new Node(3);
-		printLinkedList(head1);
-		head1 = reverseList(head1);
-		printLinkedList(head1);
+
 
 		DoubleNode head2 = new DoubleNode(1);
 		head2.next = new DoubleNode(2);
