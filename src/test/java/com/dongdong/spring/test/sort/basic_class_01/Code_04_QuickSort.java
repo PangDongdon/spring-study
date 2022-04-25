@@ -1,5 +1,7 @@
 package com.dongdong.spring.test.sort.basic_class_01;
 
+import com.dongdong.spring.test.sort.test.util.Utils;
+
 import java.util.Arrays;
 
 public class Code_04_QuickSort {
@@ -100,7 +102,7 @@ public class Code_04_QuickSort {
 
 	// for test
 	public static void main(String[] args) {
-		int testTime = 500000;
+		/*int testTime = 500000;
 		int maxSize = 100;
 		int maxValue = 100;
 		boolean succeed = true;
@@ -118,7 +120,8 @@ public class Code_04_QuickSort {
 		}
 		System.out.println(succeed ? "Nice!" : "Fucking fucked!");
 
-		int[] arr = generateRandomArray(maxSize, maxValue);
+		int[] arr = generateRandomArray(maxSize, maxValue);*/
+		int[] arr= Utils.arr;
 		printArray(arr);
 		quickSort(arr);
 		printArray(arr);

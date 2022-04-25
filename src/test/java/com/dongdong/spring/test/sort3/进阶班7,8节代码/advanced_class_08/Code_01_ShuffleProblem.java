@@ -102,7 +102,7 @@ public class Code_01_ShuffleProblem {
 	}
 
 	public static void main(String[] args) {
-		for (int i = 0; i < 5000000; i++) {
+		/*for (int i = 0; i < 5000000; i++) {
 			int[] arr = generateArray();
 			int[] arr1 = Arrays.copyOfRange(arr, 0, arr.length);
 			int[] arr2 = Arrays.copyOfRange(arr, 0, arr.length);
@@ -115,8 +115,12 @@ public class Code_01_ShuffleProblem {
 				printArray(arr2);
 				break;
 			}
+		}*/
+		int[] arr={1,2,3,4};
+		shuffle(arr);
+		for(int i=0;i<arr.length;i++){
+			System.out.println(arr[i]);
 		}
-
 	}
 
 }

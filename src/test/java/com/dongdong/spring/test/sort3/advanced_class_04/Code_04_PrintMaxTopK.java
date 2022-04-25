@@ -105,7 +105,7 @@ public class Code_04_PrintMaxTopK {
 	}
 
 	public static void main(String[] args) {
-		int[][] matrix = generateRandomMatrix(5, 10, 1000);
+		int[][] matrix = generateRandomMatrix(3, 3, 100);
 		printMatrix(matrix);
 		System.out.println("===========================");
 		printTopK(matrix, 100);

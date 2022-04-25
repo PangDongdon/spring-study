@@ -57,7 +57,7 @@ public class Code_03_Min_Gold {
 		for (int i = dp.length - 2; i >= 0; i--) {
 			dp[i] = Math.min(dp[i], dp[i + 1]);
 		}
-		// printArray(dp);
+	    printArray(dp);
 		int res = 0;
 		for (int i = 0; i < dragons.length; i++) {
 			int cost = getMaxLeftmost(dp, dragons[i]);

@@ -26,6 +26,5 @@ public class Code_06_SmallestMissNum {
 	public static void main(String[] args) {
 		int[] arr = { -1, 0, 2, 1, 3, 5 };
 		System.out.println(missNum(arr));
-
 	}
 }

@@ -118,7 +118,7 @@ public class Code_06_ArtistProblem {
 	}
 
 	public static void main(String[] args) {
-		int[] arr = generateRandomArray(300);
+		/*int[] arr = generateRandomArray(300);
 		int painterNum = 2;
 		System.out.println(solution1(arr, painterNum));
 		System.out.println(solution2(arr, painterNum));
@@ -129,7 +129,9 @@ public class Code_06_ArtistProblem {
 		long start = System.currentTimeMillis();
 		System.out.println(solution3(arr, painterNum));
 		long end = System.currentTimeMillis();
-		System.out.println("cost time: " + (end - start) + " ms");
+		System.out.println("cost time: " + (end - start) + " ms");*/
+		int[] arr={3,1,4};
+		System.out.println(solution3(arr,2));
 
 	}
 

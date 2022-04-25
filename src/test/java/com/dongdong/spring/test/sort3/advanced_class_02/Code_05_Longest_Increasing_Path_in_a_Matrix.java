@@ -32,4 +32,9 @@ public class Code_05_Longest_Increasing_Path_in_a_Matrix {
 		return h[i][j];
 	}
 
+	public static void main(String[] args) {
+		int[][] ss = {{9, 9, 4}, {6, 6, 8}, {2, 1, 1}};
+		System.out.println(longestIncreasingPath(ss));
+	}
+
 }

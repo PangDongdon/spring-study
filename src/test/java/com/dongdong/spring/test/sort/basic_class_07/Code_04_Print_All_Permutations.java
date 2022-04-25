@@ -47,15 +47,15 @@ public class Code_04_Print_All_Permutations {
 	}
 
 	public static void main(String[] args) {
-		String test1 = "abc";
+		/*String test1 = "abc";
 		printAllPermutations1(test1);
 		System.out.println("======");
 		printAllPermutations2(test1);
 		System.out.println("======");
-
+*/
 		String test2 = "acc";
-		printAllPermutations1(test2);
-		System.out.println("======");
+	/*	printAllPermutations1(test2);
+		System.out.println("======");*/
 		printAllPermutations2(test2);
 		System.out.println("======");
 	}

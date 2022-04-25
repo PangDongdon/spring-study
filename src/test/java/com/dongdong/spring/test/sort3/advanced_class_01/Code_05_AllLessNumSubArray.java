@@ -63,7 +63,8 @@ public class Code_05_AllLessNumSubArray {
 	}
 
 	public static void main(String[] args) {
-		int[] arr = getRandomArray(30);
+		//int[] arr = getRandomArray(30);
+		int[] arr={4 ,1 ,5, 2, 7, 1, 8, 5, 7, 1 ,1, 2, 4, 3 ,4, 9, 6, 3, 7 ,2, 5 ,1, 9 ,0, 6, 6, 8, 1, 7, 5 };
 		int num = 5;
 		printArray(arr);
 		System.out.println(getNum(arr, num));

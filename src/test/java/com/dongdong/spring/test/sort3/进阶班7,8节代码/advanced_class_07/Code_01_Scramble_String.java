@@ -83,7 +83,10 @@ public class Code_01_Scramble_String {
 		String test1 = "bcdebcdebcdebcdebcdebcdebcdebcdebcdebcdebcdebcdebcdebcdebcdebcdebcdebcdebcdebcdebcdebcde";
 		String test2 = "cebdcebdcebdcebdcebdcebdcebdcebdcebdcebdcebdcebdcebdcebdcebdcebdcebdcebdcebdcebdcebdcebd";
 		// System.out.println(isScramble1(test1, test2));
-		System.out.println(isScramble2(test1, test2));
+		String test3="great";
+		String test4="rgeat";
+		System.out.println(isScramble1(test3, test4));
+		System.out.println(isScramble2(test3, test4));
 	}
 
 }

@@ -141,7 +141,7 @@ public class Code_03_BiggestSubBSTInTree {
 		head.right.right = new Node(13);
 		head.right.right.left = new Node(20);
 		head.right.right.right = new Node(16);
-
+        System.out.println(process(head).size);
 		printTree(head);
 		Node bst = biggestSubBST(head);
 		printTree(bst);
