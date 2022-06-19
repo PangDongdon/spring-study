@@ -1,8 +1,8 @@
-package advanced_class_06;
+package com.dongdong.spring.test.sort6.高级班第三课代码.class03;
 
 import java.util.Stack;
 
-public class  Code_04_MaximalRectangle {
+public class Code03_MaximalRectangle {
 
 	public static int maxRecSize(int[][] map) {
 		if (map == null || map.length == 0 || map[0].length == 0) {

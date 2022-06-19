@@ -14,7 +14,7 @@ public  class Utils {
 
     public static  void printArr(int[] arr){
         for(int i:arr){
-            System.out.println(i);
+            System.out.print(i+"");
         }
     }
 }

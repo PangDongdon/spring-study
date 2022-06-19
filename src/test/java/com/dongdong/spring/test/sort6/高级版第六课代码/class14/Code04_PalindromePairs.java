@@ -1,10 +1,10 @@
-package advanced_class_02;
+package com.dongdong.spring.test.sort6.高级版第六课代码.class14;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class Code_02_Palindrome_Pairs {
+public class Code04_PalindromePairs {
 
 	public static List<List<Integer>> palindromePairs(String[] words) {
 		HashMap<String, Integer> wordset = new HashMap<>();
@@ -18,15 +18,16 @@ public class Code_02_Palindrome_Pairs {
 		return res;
 	}
 
-	public static List<List<Integer>> findAll(String word, int index, HashMap<String, Integer> words) {
+	public static List<List<Integer>> findAll(String word, int index,
+			HashMap<String, Integer> words) {
 		List<List<Integer>> res = new ArrayList<>();
-		int[] rs = manacherrs(word);
 		String reverse = reverse(word);
-		Integer rest = words.get(reverse);
+		Integer rest = words.get("");
 		if (rest != null && rest != index && word.equals(reverse)) {
 			addRecord(res, rest, index);
 			addRecord(res, index, rest);
 		}
+		int[] rs = manacherss(word);
 		int mid = rs.length >> 1;
 		for (int i = 1; i < mid; i++) {
 			if (i - rs[i] == -1) {
@@ -54,7 +55,7 @@ public class Code_02_Palindrome_Pairs {
 		res.add(newr);
 	}
 
-	public static int[] manacherrs(String word) {
+	public static int[] manacherss(String word) {
 		char[] mchs = manachercs(word);
 		int[] rs = new int[mchs.length];
 		int center = -1;
@@ -90,16 +91,22 @@ public class Code_02_Palindrome_Pairs {
 		int l = 0;
 		int r = chs.length - 1;
 		while (l < r) {
-			chs[l] ^= chs[r];
-			chs[r] ^= chs[l];
-			chs[l++] ^= chs[r--];
+			char tmp = chs[l];
+			chs[l++] = chs[r];
+			chs[r--] = tmp;
 		}
 		return String.valueOf(chs);
 	}
 
 	public static void main(String[] args) {
-      String s=reverse("ab");
-      System.out.println(s);
+		String test = "112321";
+		System.out.println(String.valueOf(manachercs(test)));
+		int[] arr = manacherss(test);
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+		System.out.println();
+
 	}
 
 }
