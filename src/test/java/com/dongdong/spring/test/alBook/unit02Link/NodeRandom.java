@@ -2,18 +2,16 @@ package com.dongdong.spring.test.alBook.unit02Link;
 
 import lombok.Data;
 
-/**
- * 节点
- */
 @Data
-public class Node {
-    public Node next;
-    public int value;
-    public Node(int value){
+public class NodeRandom {
+    public NodeRandom next;
+    public NodeRandom rand;
+    private int value;
+    public NodeRandom(int value){
         this.value =value;
     }
 
-    public Node getNode() {
+    public NodeRandom getNode() {
         return next;
     }
 
