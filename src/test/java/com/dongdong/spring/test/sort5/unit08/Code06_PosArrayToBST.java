@@ -99,8 +99,8 @@ public class Code06_PosArrayToBST {
 
 	public static void main(String[] args) {
 		int[] arr = { 2, 1, 3, 6, 5, 7, 4 };
-		System.out.println(isPost(arr, 0, arr.length - 1));
-		printTree(posArrayToBST(arr));
+		//System.out.println(isPost(arr, 0, arr.length - 1));
+		//printTree(posArrayToBST(arr));
 
 	}
 
