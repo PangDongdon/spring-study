@@ -1,7 +1,6 @@
 package com.dongdong.spring.test2.sort.basic_class1;
 
 import com.dongdong.spring.test2.sort.CommonUtils;
-import org.springframework.util.CollectionUtils;
 
 /**
  * @author dongDong.pang

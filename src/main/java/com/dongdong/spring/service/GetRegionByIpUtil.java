@@ -14,7 +14,9 @@ import javax.annotation.PostConstruct;
 import java.io.File;
 import java.net.InetAddress;
 
-/** 通过ip获取区域信息
+/**
+ * 通过ip获取区域信息
+ *
  * @Description:
  * @Date: 2020/6/5  10:57
  * @Author: dongdong
@@ -41,19 +43,20 @@ public class GetRegionByIpUtil {
             log.error("IP地址服务初始化异常:" + e.getMessage(), e);
         }
     }
+
     @Test
-    public void test(){
+    public void test() {
         init();
-        String ipAddress="192.168.63.25";
+        String ipAddress = "192.168.63.25";
         try {
             CityResponse response = reader.city(InetAddress.getByName(ipAddress));
-            String province=response.getMostSpecificSubdivision().getNames().get("zh-CN");
-            String city=response.getCity().getNames().get("zh-CN");
-            log.info("省份信息为:{},城市名称为：{}",province,city);
-        }catch (Exception e){
+            String province = response.getMostSpecificSubdivision().getNames().get("zh-CN");
+            String city = response.getCity().getNames().get("zh-CN");
+            log.info("省份信息为:{},城市名称为：{}", province, city);
+        } catch (Exception e) {
             log.error("根据IP[{}]获取省份失败:{}", ipAddress, e.getMessage());
 
+        }
     }
-}
 
 }
