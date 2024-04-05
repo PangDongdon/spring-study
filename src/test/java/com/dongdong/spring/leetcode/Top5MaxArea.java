@@ -3,7 +3,7 @@ package com.dongdong.spring.leetcode;
 /**
  * 盛最多水的容器
  */
-public class Top4MaxArea {
+public class Top5MaxArea {
 
     public static int maxArea(int[] height) {
         if (height == null || height.length == 0) {
