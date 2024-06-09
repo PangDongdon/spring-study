@@ -1,8 +1,5 @@
 package com.dongdong.spring.test.alBook.unit02Link;
 
-import jdk.internal.org.objectweb.asm.util.CheckAnnotationAdapter;
-import net.dongliu.commons.Sys;
-
 import java.util.Stack;
 
 //判断链表是否是回文

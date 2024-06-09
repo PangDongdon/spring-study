@@ -1,10 +1,7 @@
 package com.dongdong.spring.test.alBook.unit02Link;
 
 import com.dongdong.spring.test.alBook.Utils;
-import com.sun.org.apache.regexp.internal.RE;
-import net.dongliu.commons.Sys;
 
-import java.awt.*;
 import java.util.Stack;
 
 //两个单链表生成相加链表
