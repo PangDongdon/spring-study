@@ -12,7 +12,7 @@ public class ListNode {
         this.next = next;
     }
 
-    private int val;
+    public int val;
 
     public int getVal() {
         return val;
