@@ -1,6 +1,8 @@
 package com.dongdong.spring.leetcode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -30,6 +32,34 @@ public class Top58CombinationSum {
             combine.add(candidates[index]);
             dfs(candidates, target - candidates[index], ans, combine, index);
             combine.remove(combine.size() - 1);
+        }
+    }
+
+    List<List<Integer>> res=new ArrayList<>();
+    LinkedList<Integer> path=new LinkedList<>();
+    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        Arrays.sort(candidates); // 先进行排序
+      backTracking(candidates,target,0,0);
+      return res;
+    }
+
+    public void backTracking(int[] candidates, int target,int sum,int startIndex){
+        if(sum>target){
+            return;
+        }
+        if(sum==target){
+            res.add(new ArrayList<>(path));
+            return;
+        }
+        for(int i=startIndex;i< candidates.length;i++){
+            if(sum+candidates[i]>target){
+                break;
+            }
+            sum+=candidates[i];
+            path.add(candidates[i]);
+            backTracking(candidates, target, sum, i);
+            sum-=candidates[i];
+            path.removeLast();
         }
     }
 }

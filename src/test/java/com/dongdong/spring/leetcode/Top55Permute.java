@@ -2,6 +2,7 @@ package com.dongdong.spring.leetcode;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -34,5 +35,35 @@ public class Top55Permute {
            //撤销数组
            Collections.swap(outPut,first,i);
        }
+    }
+
+
+    List<List<Integer>> res=new ArrayList<>();
+    LinkedList<Integer> path = new LinkedList<>();
+    boolean[] used;
+    public List<List<Integer>> permute2(int[] nums) {
+        if(nums.length==0){
+            return res;
+        }
+        used=new boolean[nums.length];
+        backtrace2(nums);
+        return res;
+    }
+
+    private void backtrace2(int[] nums) {
+      if(path.size()==nums.length){
+          res.add(new ArrayList<>(path));
+          return;
+      }
+      for(int i=0;i<nums.length;i++){
+          if(used[i]){
+              continue;
+          }
+          used[i]=true;
+          path.add(nums[i]);
+          backtrace2(nums);
+          path.removeLast();
+          used[i]=false;
+      }
     }
 }
