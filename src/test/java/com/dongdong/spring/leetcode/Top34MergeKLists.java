@@ -1,7 +1,5 @@
 package com.dongdong.spring.leetcode;
 
-import org.springframework.util.CollectionUtils;
-
 /**
  * 合并k个升序链表
  */

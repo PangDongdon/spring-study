@@ -1,7 +1,5 @@
 package com.dongdong.spring.leetcode;
 
-import java.util.*;
-
 /**
  * 排序链表
  */

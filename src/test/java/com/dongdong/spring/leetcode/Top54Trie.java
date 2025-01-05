@@ -1,7 +1,5 @@
 package com.dongdong.spring.leetcode;
 
-import lombok.val;
-
 /**
  *实现Tire前缀树
  */

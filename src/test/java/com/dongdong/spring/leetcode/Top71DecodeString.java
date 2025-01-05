@@ -1,7 +1,5 @@
 package com.dongdong.spring.leetcode;
 
-import lombok.val;
-
 import java.util.Collections;
 import java.util.LinkedList;
 

@@ -1,7 +1,5 @@
 package com.dongdong.spring.leetcode;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 /**
  * 二叉树的最大深度
  */

@@ -1,6 +1,5 @@
 package com.dongdong.spring.leetcode;
 
-import lombok.val;
 import org.apache.commons.lang.StringUtils;
 
 /**

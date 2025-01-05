@@ -1,7 +1,5 @@
 package com.dongdong.spring.leetcode;
 
-import org.assertj.core.util.Lists;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
