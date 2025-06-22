@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class Top3LongestConsecutive {
-    public int longestConsecutive(int[] nums) {
+    public static int longestConsecutive(int[] nums) {
         if(nums==null || nums.length<1){
             return 0;
         }
@@ -27,5 +27,10 @@ public class Top3LongestConsecutive {
           }
         }
         return longStreak;
+    }
+
+    public static void main(String[] args) {
+        int[] array={6,5,4,3};
+        System.out.println(longestConsecutive(array));
     }
 }
